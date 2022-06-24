@@ -1,0 +1,44 @@
+$color-primary:#9356DC ;
+$color-secondary: #FF79DA;
+$color-tertiary:#99E2D0;
+/*$color: adjust-color($color-primary,$color-secondary);*/
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+img {
+    width: 45%;
+    height: 45%;
+    padding-top: 15px;
+    padding-left: 100px;
+}
+
+/*adresse et info du restaurant*/
+.adresse {
+    text-align: center;
+    background-color: gray;
+    padding: 15px;
+    
+}
+
+.adresse i {
+    margin-right: 15px;
+}
+
+.info {
+    background-color: lightgray;
+    padding:30px;
+
+}
+
+.info h1 {
+    font-size:25px;
+}
+
+.info button{
+    padding: 15px;
+    background-color: $color-primary;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
