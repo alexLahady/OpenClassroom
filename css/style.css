@@ -1,17 +1,26 @@
-/*$color: adjust-color($color-primary,$color-secondary);*/
 body {
   width: 100%;
   margin: 0 auto;
 }
 
-img {
-  width: 45%;
-  height: 45%;
-  padding-top: 15px;
-  padding-left: 100px;
+header {
+  display: flex;
+  justify-content: center;
 }
 
-/*adresse et info du restaurant*/
+header img {
+  width: 25%;
+  height: 25%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 798px) {
+  header img {
+    width: 45%;
+    height: 25%;
+  }
+}
 .adresse {
   text-align: center;
   background-color: gray;
@@ -20,6 +29,10 @@ img {
 
 .adresse i {
   margin-right: 15px;
+}
+
+.reservation {
+  text-align: center;
 }
 
 .info {
@@ -37,6 +50,66 @@ img {
   color: white;
   border-radius: 25px;
   border: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu--child {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 25px;
+  padding-right: 50px;
+  background-color: gray;
+  margin-bottom: 5px;
+  border-radius: 30px;
+}
+
+.menu--child--child {
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 7px;
+  margin-left: -32px;
+  color: white;
+}
+
+.menu--child--text {
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+.menu--child:hover {
+  background-color: #99E2D0;
+}
+.menu--child:hover i {
+  color: #9356DC;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+footer img {
+  height: 50px;
+  width: 100px;
+}
+
+footer div {
+  margin: 2px;
+}
+
+@media (max-width: 798px) {
+  footer {
+    padding-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+.menu--child {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 25px;
+    padding-right: 50px;
+    background-color: gray;//temporaire
+    margin-bottom: 5px;
+    border-radius: 30px;
+}
+
+.menu--child--child {
+    border-radius: 50%;
+    background-color: $color-primary;
+    padding:7px;
+    margin-left: -32px;
+    color: white;
+}
+
+.menu--child--text {
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.menu--child:hover {
+    background-color: $color-tertiary;
+    i {
+        color: $color-primary;
+    }
+} 

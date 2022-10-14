@@ -1,0 +1,21 @@
+.reservation {
+    text-align: center;
+}
+
+.info {
+    background-color: lightgray;
+    padding:30px;
+
+}
+
+.info h1 {
+    font-size:25px;
+}
+
+.info button{
+    padding: 15px;
+    background-color: $color-primary;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}

@@ -1,0 +1,20 @@
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding-left: 50px;
+}
+footer img {
+    height: 50px;
+    width: 100px;
+}
+footer div {
+    margin: 2px;
+}
+
+@media (max-width:798px){
+    footer {
+        padding-left: 20px;
+    }
+}
