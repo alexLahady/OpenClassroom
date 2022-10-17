@@ -1,4 +1,19 @@
 body {
     width: 100%;
     margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media(max-width:798px){
+    .title {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 1.5em;
+    }
 }

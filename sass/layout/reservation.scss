@@ -3,7 +3,7 @@
 }
 
 .info {
-    background-color: lightgray;
+    background-color: #F2F2F2;
     padding:30px;
 
 }
@@ -13,9 +13,11 @@
 }
 
 .info button{
+    font-size: 0.9em;
     padding: 15px;
-    background-color: $color-primary;
     color: white;
     border-radius: 25px;
     border: none;
+    background: linear-gradient(to bottom right, $color-secondary 0%, $color-primary 100%);
+    box-shadow: 1px 3px 4px $color-darkgrey;
 }

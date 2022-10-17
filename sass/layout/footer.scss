@@ -1,6 +1,6 @@
 footer {
     display: flex;
-    background-color: black;
+    background-color: $color-black;
     color: white;
     flex-direction: column;
     padding-left: 50px;
@@ -8,9 +8,11 @@ footer {
 footer img {
     height: 50px;
     width: 100px;
+    filter: brightness(15);
 }
 footer div {
     margin: 2px;
+    margin-bottom: 5px;
 }
 
 @media (max-width:798px){

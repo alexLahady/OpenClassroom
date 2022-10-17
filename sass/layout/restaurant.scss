@@ -1,0 +1,55 @@
+.restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    background-color: $color-gray;
+}
+
+.restaurant--img {
+    border: 1px solid grey;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 3px 4px $color-darkgrey;
+}
+
+.restaurant--img img {
+    width:  450px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.restaurant--title{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.restaurant--title--child h2{
+    font-size: 1em;
+    margin-bottom: 3px;
+}
+
+.restaurant--title--child span {
+    padding-top:3px;
+}
+
+.restaurant--title--logo {
+    font-size: 1.5em;
+    padding-right: 15px;
+    padding-top:15px;
+}
+
+.restaurant--title--logo i:hover {
+    color: $color-primary;
+}
+
+@media(max-width:798px){
+    .restaurant--img img {
+        width: 320px;
+        height: 170px;
+    }
+}

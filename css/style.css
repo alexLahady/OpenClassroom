@@ -1,11 +1,26 @@
 body {
   width: 100%;
   margin: 0 auto;
+  font-family: "Raleway", sans-serif;
 }
 
+.title {
+  padding-top: 70px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 798px) {
+  .title {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.5em;
+  }
+}
 header {
   display: flex;
   justify-content: center;
+  box-shadow: 1px 3px 4px #9C9C9C;
 }
 
 header img {
@@ -23,7 +38,7 @@ header img {
 }
 .adresse {
   text-align: center;
-  background-color: gray;
+  background-color: lightgray;
   padding: 15px;
 }
 
@@ -36,7 +51,7 @@ header img {
 }
 
 .info {
-  background-color: lightgray;
+  background-color: #F2F2F2;
   padding: 30px;
 }
 
@@ -45,11 +60,13 @@ header img {
 }
 
 .info button {
+  font-size: 0.9em;
   padding: 15px;
-  background-color: #9356DC;
   color: white;
   border-radius: 25px;
   border: none;
+  background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+  box-shadow: 1px 3px 4px #9C9C9C;
 }
 
 .menu {
@@ -64,9 +81,10 @@ header img {
   gap: 10px;
   padding: 25px;
   padding-right: 50px;
-  background-color: gray;
+  background-color: #F2F2F2;
   margin-bottom: 5px;
   border-radius: 30px;
+  box-shadow: 1px 3px 4px #9C9C9C;
 }
 
 .menu--child--child {
@@ -83,15 +101,81 @@ header img {
 }
 
 .menu--child:hover {
-  background-color: #99E2D0;
+  background-color: rgb(254, 237, 255);
 }
 .menu--child:hover i {
   color: #9356DC;
 }
 
+@media (max-width: 810px) {
+  .menu {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .menu--child {
+    margin-bottom: 20px;
+  }
+}
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  background-color: #F2F2F2;
+}
+
+.restaurant--img {
+  border: 1px solid grey;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 3px 4px #9C9C9C;
+}
+
+.restaurant--img img {
+  width: 450px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant--title {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.restaurant--title--child h2 {
+  font-size: 1em;
+  margin-bottom: 3px;
+}
+
+.restaurant--title--child span {
+  padding-top: 3px;
+}
+
+.restaurant--title--logo {
+  font-size: 1.5em;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.restaurant--title--logo i:hover {
+  color: #9356DC;
+}
+
+@media (max-width: 798px) {
+  .restaurant--img img {
+    width: 320px;
+    height: 170px;
+  }
+}
 footer {
   display: flex;
-  background-color: black;
+  background-color: rgb(53, 53, 53);
   color: white;
   flex-direction: column;
   padding-left: 50px;
@@ -100,10 +184,12 @@ footer {
 footer img {
   height: 50px;
   width: 100px;
+  filter: brightness(15);
 }
 
 footer div {
   margin: 2px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 798px) {

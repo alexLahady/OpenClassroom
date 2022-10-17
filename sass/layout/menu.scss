@@ -9,9 +9,10 @@
     gap: 10px; 
     padding: 25px;
     padding-right: 50px;
-    background-color: gray;//temporaire
+    background-color:$color-gray;//temporaire
     margin-bottom: 5px;
     border-radius: 30px;
+    box-shadow: 1px 3px 4px $color-darkgrey;
 }
 
 .menu--child--child {
@@ -28,8 +29,18 @@
 }
 
 .menu--child:hover {
-    background-color: $color-tertiary;
+    background-color: $color-purple;
     i {
         color: $color-primary;
     }
 } 
+
+@media(max-width:810px){
+    .menu{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .menu--child {
+        margin-bottom:20px ;
+    }
+}
