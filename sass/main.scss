@@ -1,8 +1,15 @@
 @import "./utils/variables.scss";
+
 @import "./base/base.scss";
+
 @import "./layout/header.scss";
 @import "./layout/adresse.scss";
 @import "./layout/reservation.scss";
 @import "./layout/menu.scss";
 @import "./layout/restaurant.scss";
 @import "./layout/footer.scss";
+
+@import "./pages/menu_fr";
+@import "./pages/menu_is";
+@import "./pages/menu_ne";
+@import "./pages/menu_pg";

@@ -10,6 +10,19 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 @media (max-width: 798px) {
   .title {
     text-align: left;
@@ -110,11 +123,12 @@ header img {
 @media (max-width: 810px) {
   .menu {
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 15px;
   }
 
   .menu--child {
     margin-bottom: 20px;
+    margin-right: 10px;
   }
 }
 .restaurant {
