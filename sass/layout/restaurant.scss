@@ -1,25 +1,26 @@
 .restaurant {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 20px;
+    justify-content: center;
     background-color: $color-gray;
 }
 
 .restaurant--img {
+    position: relative;
     border: 1px solid grey;
     margin: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 1px 3px 4px $color-darkgrey;
 }
 
 .restaurant--img img {
-    width:  450px;
-    height: 225px;
+    width:  680px;
+    height: 375px;
     object-fit: cover;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .restaurant--title{
@@ -43,13 +44,21 @@
     padding-top:15px;
 }
 
-.restaurant--title--logo i:hover {
+.restaurant--title--logo a{
+    position: absolute;//refaire avec positon absolue -top27px
+        bottom: 0.75em;
     color: $color-primary;
+    opacity: 0;
+    //ajouter l'animation et refaire le margin
+}
+
+.restaurant--title--logo a:hover{
+    opacity:1;
 }
 
 @media(max-width:798px){
     .restaurant--img img {
-        width: 320px;
-        height: 170px;
+        width: 375px;
+        height: 187.5px;
     }
 }

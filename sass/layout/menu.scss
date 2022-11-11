@@ -1,11 +1,13 @@
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+
 .menu--child {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;//baisser la largeur en fonction de l'écran
     gap: 10px; 
     padding: 25px;
     padding-right: 50px;
@@ -41,7 +43,14 @@
         padding-left: 15px;
     }
     .menu--child {
+        width: 88%;
         margin-bottom:20px ;
         margin-right: 10px;
+    }
+}
+
+@media(max-width:680px){
+    .menu--child {
+        width: 75%;
     }
 }
