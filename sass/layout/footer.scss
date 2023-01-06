@@ -4,16 +4,18 @@ footer {
     color: white;
     flex-direction: column;
     padding-left: 50px;
+
+    & img {
+        height: 50px;
+        width: 100px;
+        filter: brightness(15);
+    }
+    & div {
+        margin: 2px;
+        margin-bottom: 5px;
+    }
 }
-footer img {
-    height: 50px;
-    width: 100px;
-    filter: brightness(15);
-}
-footer div {
-    margin: 2px;
-    margin-bottom: 5px;
-}
+
 
 @media (max-width:798px){
     footer {
