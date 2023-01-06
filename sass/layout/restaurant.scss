@@ -1,8 +1,11 @@
+@use"../utils/variables.scss" as var;
+@use"../utils/animation.scss" as anim;
+
 .restaurant {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: $color-gray;
+    background-color: var.$color-gray;
 }
 
 .restaurant--img {
@@ -14,6 +17,16 @@
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 3px 4px $color-darkgrey;
+    &:nth-child(-n+2):after {
+        content :"Nouveau";
+        background-color: var.$color-tertiary;
+        color: #466d63;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+            right:1rem;
+            top:1.5rem;
+    }
 }
 
 .restaurant--img img {
@@ -53,7 +66,10 @@
 }
 
 .restaurant--title--logo a:hover{
-    opacity:1;
+    @include anim.heart;
+        animation-name: itemheart;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
 }
 
 @media(max-width:798px){

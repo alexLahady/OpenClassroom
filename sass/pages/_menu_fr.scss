@@ -8,6 +8,13 @@
     position: absolute;
         left: 1px;
     }
+    @media (max-width:800px){
+        a {
+            position: absolute;
+                left: 1px;
+                top: -9px;
+        }
+    }
 }
 
 .banner img{
@@ -15,7 +22,7 @@
     height: 500px;
 
     @media (max-width:1000px){
-        height:50%;
+        height:250px;
     }
 }
 
@@ -34,8 +41,24 @@
         font-size: 1.8rem;
     }
     
-    & i {
+    & div i {
         margin: 40px;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    & a {
+        position: absolute;//refaire avec positon absolue -top27px
+            top:2.75em;
+            left:84.9em;
+        color: var.$color-primary;
+        opacity: 0;
+    }
+    & a:hover {
+        @include anim.heart;
+        animation-name: itemheart;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
     }
 }
 
@@ -129,10 +152,9 @@
                 background-color: white;
                 width:2rem;
                 color:var.$color-tertiary;
-                padding: 7px;
+                padding: 5px;
 
             }
-            // padding :1rem;
         }
 
         &_description{
@@ -140,8 +162,6 @@
             padding-top: 0rem;
             padding-bottom:0rem ;
             overflow: hidden;
-            // white-space: nowrap;
-            // text-overflow: ellipsis;
             
             h4,p{
                 overflow: hidden;
@@ -161,6 +181,25 @@
             }
         } 
 
-        // menu-grid__item_check
+    }
+}
+
+
+.commande{
+    text-align: center;
+    & button {
+        margin-bottom: 20px;
+        @include mix.button;
+        padding-left:50px;
+        padding-right:50px;
+    }
+    & button:hover{
+        @include mix.zoom;
+    } 
+    
+    @media(max-width:700px){
+        button {
+            font-size: 1em;
+        }
     }
 }
