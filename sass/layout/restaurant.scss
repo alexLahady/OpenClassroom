@@ -26,6 +26,9 @@
         position: absolute;
             right:1rem;
             top:1.5rem;
+        @media(max-width:800px) {
+            font-size: 0.8em;
+        }
     }
 }
 
