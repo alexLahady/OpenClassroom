@@ -72,9 +72,8 @@
     @include anim.heart;
         animation-name: itemheart;
         animation-duration: 300ms;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards;  
 }
-
 @media(max-width:798px){
     .restaurant--img img {
         width: 375px;

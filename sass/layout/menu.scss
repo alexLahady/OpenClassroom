@@ -1,3 +1,6 @@
+@use"../utils/variables.scss" as var;
+
+
 .menu {
     display: flex;
     justify-content: center;
@@ -11,16 +14,16 @@
     gap: 10px; 
     padding: 25px;
     padding-right: 50px;
-    background-color:$color-gray;//temporaire
+    background-color: var.$color-gray;//temporaire
     margin-bottom: 5px;
     margin-left: 10px;
     border-radius: 30px;
-    box-shadow: 1px 3px 4px $color-darkgrey;
+    box-shadow: 1px 3px 4px var.$color-darkgrey;
 }
 
 .menu--child--child {
     border-radius: 50%;
-    background-color: $color-primary;
+    background-color: var.$color-primary;
     padding:7px;
     margin-left: -32px;
     color: white;
@@ -32,9 +35,9 @@
 }
 
 .menu--child:hover {
-    background-color: $color-purple;
+    background-color: var.$color-purple;
     i {
-        color: $color-primary;
+        color: var.$color-primary;
     }
 } 
 

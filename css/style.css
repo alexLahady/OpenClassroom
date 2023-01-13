@@ -269,11 +269,11 @@ footer div {
 
 .lds-circle > div {
   display: inline-block;
-  width: 64px;
-  height: 64px;
+  width: 150px;
+  height: 150px;
   margin: 8px;
   border-radius: 50%;
-  background: black;
+  background: #9356DC;
   animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
@@ -293,16 +293,43 @@ footer div {
   }
 }
 .loading-container {
-  position: absolute;
-  background-color: white;
-  width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 1s ease-in-out;
+  background-color: #ffffff;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  opacity: 1;
+  animation: loader 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  transform-origin: top;
+  display: grid;
+  place-items: center;
+}
+.loading-container p {
+  margin-top: -11em;
+  font-size: 1.5em;
+  color: #9356DC;
 }
 
+/*
+@keyframes hide {
+  0%,99% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+*/
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .header {
   position: relative;
 }
