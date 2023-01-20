@@ -8,7 +8,7 @@
     background-color: #F2F2F2;
     padding:30px;
 
-    & h1 {
+    & h2 {
         font-size:25px;
     }
     & button {
@@ -18,7 +18,6 @@
         @include mix.zoom;
     }
 }
-
 
 @media(max-width:700px){
     .info button{

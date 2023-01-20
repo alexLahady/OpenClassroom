@@ -62,7 +62,7 @@
 }
 
   
-.restaurant--title--logo a{
+.restaurant--title--logo a {
     position: relative;//refaire avec positon absolue -top27px
         bottom: 27px;
     color: $color-primary;
@@ -76,9 +76,6 @@
         animation-duration: 300ms;
         animation-fill-mode: forwards;
 }
-
-
-  
 
 @media(max-width:798px){
     .restaurant--img img {
