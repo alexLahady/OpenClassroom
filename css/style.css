@@ -429,8 +429,8 @@ footer div a {
 }
 @media (max-width: 1000px) {
   .liste a {
-    top: 3.7em;
-    right: 2.5em;
+    top: 3em;
+    right: 2.3em;
   }
 }
 .liste a:hover {
