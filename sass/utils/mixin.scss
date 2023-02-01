@@ -5,8 +5,16 @@
 
 
 @mixin zoom {
-    transform: scale(1.02);
-    opacity:0.9;
+    @keyframes itemzoom {
+        0%{
+            opacity: 1;
+         }   
+    
+         100%{
+            opacity:0.9;
+            transform : scale(1.1);
+            }
+        }
 }
 
 @mixin button {

@@ -1,7 +1,7 @@
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .title {
@@ -85,8 +85,18 @@ header img {
   box-shadow: 1px 3px 4px #9C9C9C;
 }
 .info button:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
+  animation-name: itemzoom;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes itemzoom {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 700px) {
@@ -218,9 +228,13 @@ header img {
   position: relative;
   bottom: 29px;
   right: 1px;
-  color: #9356DC;
   opacity: 0;
   font-size: 1.1em;
+}
+.restaurant--title--logo a i {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restaurant--title--logo a:hover {
@@ -259,6 +273,9 @@ footer img {
 footer div {
   margin: 2px;
   margin-bottom: 5px;
+}
+footer div a {
+  color: white;
 }
 
 @media (max-width: 798px) {
@@ -371,11 +388,11 @@ footer div {
   justify-content: space-between;
   background-color: #F2F2F2;
   position: relative;
-  top: -20px;
+  top: 0px;
   border-radius: 30px 30px 0px 0px;
 }
 .liste h1 {
-  font-family: "Moon Dance", cursive;
+  font-family: "Shrikhand", cursive;
   margin: 40px;
   margin-left: 60px;
   font-size: 2.5rem;
@@ -401,6 +418,12 @@ footer div {
   right: 4.41em;
   color: #9356DC;
   opacity: 0;
+  /*
+  & i {
+      background: -webkit-linear-gradient(var.$color-primary, var.$color-secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  */
 }
 @media (max-width: 1000px) {
   .liste a {
@@ -424,7 +447,8 @@ footer div {
 }
 
 .main {
-  margin-top: -8em;
+  margin-top: -4em;
+  background-color: #F2F2F2;
 }
 
 .menu-grid {
@@ -439,7 +463,6 @@ footer div {
   }
 }
 .menu-grid__category {
-  background-color: white;
   overflow: hidden;
 }
 .menu-grid__category h3 {
@@ -458,6 +481,7 @@ footer div {
   top: 1.5rem;
 }
 .menu-grid__item {
+  background-color: white;
   border-radius: 1rem;
   overflow: hidden;
   margin: 1.5rem;
@@ -558,8 +582,18 @@ footer div {
   padding-right: 50px;
 }
 .commande button:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
+  animation-name: itemzoom;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes itemzoom {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
 }
 @media (max-width: 700px) {
   .commande button {

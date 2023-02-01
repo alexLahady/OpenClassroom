@@ -16,6 +16,9 @@
     }
     & button:hover {
         @include mix.zoom;
+        animation-name:itemzoom;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
     }
 }
 

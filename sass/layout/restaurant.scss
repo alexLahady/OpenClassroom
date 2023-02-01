@@ -66,10 +66,14 @@
     position: relative;//refaire avec positon absolue -top27px
         bottom: 29px;
         right: 1px;
-    color: $color-primary;
     opacity: 0;
     font-size: 1.1em;
     //ajouter l'animation et refaire le margin
+    & i {
+        background: -webkit-linear-gradient(var.$color-primary, var.$color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .restaurant--title--logo a:hover{
