@@ -64,11 +64,18 @@
     
     & a {
         position: absolute;//refaire avec positon absolue 
-            top:4em;
+            top:3.4em;
             right:4.41em;
-        color: var.$color-primary;
+        //color: var.$color-primary;
         opacity: 0;
         //transform : translateY(-50%)
+        & i {
+            font-size: 2em;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(var.$color-primary,var.$color-secondary);
+        }
         @media(max-width:1000px){
             top:3.7em;
             right:2.5em;

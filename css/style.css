@@ -416,10 +416,16 @@ footer div a {
 }
 .liste a {
   position: absolute;
-  top: 4em;
+  top: 3.4em;
   right: 4.41em;
-  color: #9356DC;
   opacity: 0;
+}
+.liste a i {
+  font-size: 2em;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#9356DC, #FF79DA);
 }
 @media (max-width: 1000px) {
   .liste a {
