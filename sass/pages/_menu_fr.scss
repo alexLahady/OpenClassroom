@@ -73,12 +73,6 @@
             top:3.7em;
             right:2.5em;
         }
-        /*
-        & i {
-            background: -webkit-linear-gradient(var.$color-primary, var.$color-secondary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        */
     }
     & a:hover {
         @include anim.heart;
@@ -225,6 +219,7 @@
         animation-name:itemzoom;
         animation-duration: 300ms;
         animation-fill-mode: forwards;
+        box-shadow: 1px 3px 4px black;
     } 
     
     @media(max-width:700px){
